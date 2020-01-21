@@ -58,22 +58,22 @@ fun callucate(say :Int,say2:Int):Double{
 fun reformatString(message:String,isUpperCase:Boolean=false,size:Int,lang:String="tr"){
 
 
+}
 
+fun getUserInfo(name: String, surName: String, city: String, country: String) {
 
 
 }
 
-fun getUserInfo(name:String,surName:String,city:String,country:String){
+fun getUserInfo2(vararg userInfo: String, key: Int) {
 
-
-
+    userInfo
 
 
 }
-fun getUserInfo2(vararg userInfo:String,key:Int){
 
-userInfo
+val userList = arrayOfNulls<String>(5)
+fun getListCount(): Int {
 
-
-
+    return 0
 }
