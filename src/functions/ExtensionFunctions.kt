@@ -22,6 +22,12 @@ fun main() {
 
     "3" explus "5" log3 ""
 
+    val shape = Shape()
+    shape.calculateArea(45.0)
+    shape.main()
+
+    println("asd4")
+
 
 }
 
@@ -49,6 +55,44 @@ infix fun Number.log3(emptyParam: String) {
 
 fun String.explus2(otherString: String): Int = this.toInt() + otherString.toInt()
 infix fun String.explus(otherString: String): Int = this.toInt() + otherString.toInt()
+
+class Shape {
+
+    //fun calculateArea(edge:Int):Int{return edge*edge}
+    fun calculateArea(edge: Int): Int = edge * edge //expresion yazılımı.Süslü parantezden kurtul = ile yaz.
+
+    //bir extension funksiyon bir clasın uye fonksiyonu ile birlikte kullanmaya calısırsak uye fonksiyon calısır.
+    fun Int.extoString() {
+
+        toString()
+        println("Sımsek")
+
+    }
+
+    fun extoString() {
+
+
+        println("Tanju")
+    }
+
+    fun main() {
+
+        3.extoString()
+
+    }
+
+
+}
+
+fun Shape.calculateArea(edge: Double): Int {
+    val result = edge * edge
+    println(result)
+    return result.toInt()
+
+}
+
+
+
 
 
 
