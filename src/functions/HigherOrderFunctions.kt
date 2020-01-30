@@ -1,8 +1,5 @@
 package functions
 
-import java.util.*
-import kotlin.concurrent.schedule
-
 fun main() {
 
     val surName: String = "abc"
@@ -39,12 +36,12 @@ fun printUserInfo(name: String, getSurname: (surName: String) -> String, age: In
 fun getItemClickListener(onClick: (buttonName: String) -> Unit) {
 
     println("başla")
-    Timer().schedule(3000) {
+    /*Timer().schedule(3000) {
 
         onClick("Login")
 
 
-    }
+    }*/
     println("bitti")
 
 
